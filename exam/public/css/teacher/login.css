@@ -1,0 +1,130 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('/images/teacher-bg.png');
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 60%;
+    height: 260px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 50px 5px 0 5px;
+}
+span {
+    display: inline-block;
+    width: 65px;
+    text-align: right;
+}
+
+form input {
+    display: inline-block;
+    outline-style: none;
+    outline-width: 0;
+    outline: none;
+    text-shadow: none;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    border: #202225 1px solid;
+}
+
+input:focus {
+    border: #17181a 1px solid;
+    box-sizing: border-box;
+}
+
+button {
+    width: 120px;
+    display: block;
+    background-color: white;
+    border: #202225 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: #202225;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #202225;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright {
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    position: relative;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    color: #b7c1d0;
+}
+
+.footer-link {
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+nav a {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #6c737d;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}

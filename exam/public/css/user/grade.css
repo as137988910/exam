@@ -1,0 +1,121 @@
+table {
+    margin: 0 auto;
+    height: 400px;
+}
+
+.top-title {
+    width: 80px;
+    padding: 2px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+#name,
+#age,
+#sex,
+#admission {
+    width: 120px;
+    padding: 2px;
+    text-align: center;
+}
+
+#school {
+    padding: 2px;
+    text-align: center;
+}
+
+.subject {
+    text-align: center;
+    padding: 2px;
+}
+td{
+    text-align: center;
+}
+.grade {
+    text-align: center;
+    padding: 2px;
+}
+
+.head {
+    margin: 0;
+    padding: 0;
+}
+
+.head img {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 584px;
+}
+
+.search-row {
+    position: relative;
+    top: 35%;
+    padding: 30px;
+    display: table;
+    margin: 0 auto;
+}
+.move-top {
+    animation:moveTop 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.move-mid{
+    animation:moveMid 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes moveTop {
+    0%{
+        top: 35%;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes moveMid {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 35%;
+    }
+}
+.search-row input {
+    width: 450px;
+    padding: 5px;
+    border: none;
+    border-bottom: rgb(13, 184, 150) 1px solid;
+    margin: 10px;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.search-row input:focus {
+    border: none;
+    border-bottom: rgb(13, 184, 150) 1px solid;
+}
+
+.search-row button {
+    background-color: rgb(13, 184, 150);
+    border-radius: 5px;
+    border: rgb(13, 184, 150) 1px solid;
+    padding: 2px;
+    width: 120px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-row button:hover {
+    background-color: white;
+    color: rgb(13, 184, 150);
+}
+
+.grade-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(13, 184, 150);
+}

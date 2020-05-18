@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+p#instruction{
+    margin: 0;
+}
+.paper-main{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 500px;
+}
+#paper-list{
+    margin: 0;
+}
+#paper-list>li{
+    list-style: none;
+    border-bottom: #0f2e42 1px solid;
+}
+.selection-list{
+    margin: 20px 0;
+    width: 60%;
+}
+.selection-list>div{
+    padding: 10px;
+}

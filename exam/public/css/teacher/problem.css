@@ -1,0 +1,204 @@
+.add-box {
+    width: 100%;
+    position: relative;
+}
+.workspace{
+    height: 490px;
+    overflow: scroll;
+}
+.sub-bar{
+
+}
+.select-btn {
+    width: 50%;
+    margin: 30px auto;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 20%;
+}
+
+.add-btn {
+    position: relative;
+    left: 30%;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.node {
+    position: relative;
+}
+
+.title {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.radio {}
+
+.checkbox {}
+
+.judge {}
+
+.text {}
+
+.delete-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #202225;
+}
+
+.node:hover .delete-btn {
+    display: block;
+}
+
+.sub-bar {
+    width: 100%;
+}
+
+.sub-bar button {
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+}
+.content-box{
+    position: relative;
+}
+#add,#list{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 630px;
+    background-color: white;
+}
+#list{
+    z-index: 2;
+}
+#add{
+    z-index: 1;
+}
+.upper{
+    animation: changeUp 1s linear;
+    animation-fill-mode: forwards;
+}
+.lower{
+    animation: changeLow 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes changeUp {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        z-index: 2;
+    }
+}
+@keyframes changeLow {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        z-index: 1;
+    }
+}
+.drop-btn-box{
+    width: 100%;
+    padding: 10px 0;
+    height: 30px;
+}
+.drop-btn-box>span{
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.drop-btn{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}
+.search-box{
+    width: fit-content;
+    margin: 0 auto;
+}
+.search-box>input{
+    width: 350px;
+}
+input:focus{
+    outline: none;
+}
+.search-box>button{
+    padding:3px 10px 5px 10px;
+}
+#show-list{
+    height: 550px;
+    overflow: scroll;
+}
+#show-list fieldset{
+    position: relative;
+}
+#show-list fieldset:hover .modify{
+    display: inline-block;
+}
+.show-title{
+    text-indent: 20px;
+}
+.modify{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}
+.modify button{
+    padding: 3px 20px;
+}
+hr{
+    padding: 60px;
+    margin-bottom: 30px;
+}
+.page{
+    width: 100%;
+}
+.page>ul{
+    width: fit-content;
+    margin: 0 auto;
+}
+.page>ul>li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    list-style: none;
+}
+.page>ul>li>a{
+    float: left;
+    text-decoration: none;
+    color: #202225;
+}
+#modify{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.4);
+}
+#modify-form{
+    margin: 20% auto;
+
+    width: fit-content;
+}

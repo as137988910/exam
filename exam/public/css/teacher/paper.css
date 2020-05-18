@@ -1,0 +1,376 @@
+.container {
+    min-width: 1200px;
+}
+
+.main {
+    width: 100%;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*.wrapper-left {*/
+/*    flex: 200;*/
+/*    overflow: scroll;*/
+/*    padding: 10px;*/
+/*}*/
+
+.wrapper-close {
+    animation: closed 1s linear;
+    animation-fill-mode: forwards;
+}
+.wrapper-open-left{
+    padding: 10px;
+    overflow: scroll;
+    animation: open 1s linear;
+    animation-fill-mode: forwards;
+}
+.wrapper-open-right{
+    padding: 10px;
+    z-index: 3;
+    background-color: white;
+    overflow: scroll;
+    animation: open 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes  closed{
+    0%{
+        padding: 10px;
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+@keyframes  open{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.search-box {
+    min-width: 1130px;
+}
+.show-paper{
+    position: relative;
+    right: 0;
+    display: inline-block;
+}
+table.table {
+    min-width: 600px;
+}
+
+#id {
+    visibility: hidden;
+}
+
+fieldset {
+    border: #adadad 1px solid;
+}
+
+.table td {
+    text-align: center;
+    border-left: #adadad 1px solid;
+    border-right: #adadad 1px solid;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.problem-detail {
+    width: 120px;
+    overflow: hidden;
+}
+.problem-list{
+    min-width: 1130px;
+}
+
+.paper-top{
+    min-width: 550px;
+    overflow: hidden;
+}
+.paper-example{
+    min-height: 520px;
+    overflow: hidden;
+}
+.page{
+    width: 100%;
+}
+.page>ul{
+    width: fit-content;
+    margin: 0 auto;
+}
+.page>ul>li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    list-style: none;
+}
+.page>ul>li>a{
+    float: left;
+    text-decoration: none;
+    color: #202225;
+}
+.add-box{
+    height: 680px;
+}
+.add-btn-open{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    position: relative;
+    top: 30%;
+}
+.add-btn-close{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    color: #202225;
+    background-color: white;
+    /*border: #202225 1px solid;*/
+}
+.add-box-close{
+    animation: 1s addFrame ease-in-out ;
+    animation-fill-mode: forwards;
+}
+.add-box-open{
+    animation: 2s cancelFrame ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes addFrame {
+    0%{
+        height: 680px;
+    }
+    100%{
+        height: 0px;
+    }
+}
+@keyframes cancelFrame {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 680px;
+    }
+}
+.edit-btn-open{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    position: relative;
+    top: 35%;
+}
+.edit-btn-close{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    color: #202225;
+    background-color: white;
+    /*border: #202225 1px solid;*/
+}
+/*.edit-box-close{*/
+/*    animation: 1s addFrame ease-in-out ;*/
+/*    animation-fill-mode: forwards;*/
+/*}*/
+/*.edit-box-open{*/
+/*    animation: 2s cancelFrame ease-in;*/
+/*    animation-fill-mode: forwards;*/
+/*}*/
+.top-wrapper-open{
+        animation: 1s editFrame ease-in;
+        animation-fill-mode: forwards;
+}
+.top-wrapper-close{
+    overflow: hidden;
+    animation: 1s cancelEdit ease-in;
+    animation-fill-mode: forwards;
+}
+.top-wrapper{
+    overflow: hidden;
+    height: 0;
+    /*animation: 2s cancelEdit ease-in;*/
+    /*animation-fill-mode: forwards;*/
+}
+.top-wrapper-btn{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    color: #202225;
+    background-color: white;
+}
+.template-main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 560px;
+}
+#template-list{
+    width: fit-content;
+    height: 100%;
+}
+.template-li{
+    cursor: pointer;
+    display: inline-block;
+    width: 350px;
+    box-sizing: border-box;
+}
+.template-img{
+    width: 280px;
+}
+.flip{
+    width: 280px;
+    height: 180px;
+    position: relative;
+    margin: 30px auto;
+}
+.template-detail{
+    position: relative;
+    height: 100%;
+}
+.title{
+    text-align: center;
+}
+.description{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.date-box{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.date-span{
+    font-weight: 500;
+    font-size: 15px;
+}
+.date,.score{
+    font-weight: 300;
+    font-size: 12px;
+}
+.flip-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+.flip-front{
+    z-index: 2;
+    transform: rotateY(0deg);
+    transform-origin:center ;
+}
+.flip-back{
+    z-index: 1;
+    transform: rotateY(180deg);
+    transform-origin:center ;
+    border: #202225 1px solid;
+}
+.flip:hover .flip-front{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.flip:hover .flip-back{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.search-template-box{
+    width: fit-content;
+    margin: 0 auto;
+}
+#template-key{
+    width: 350px;
+}
+@keyframes editFrame {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 680px;
+    }
+}
+@keyframes cancelEdit {
+    0%{
+        height: 680px;
+    }
+    100%{
+        height: 0px;
+    }
+}
+.btn-disabled{
+    background: #adadad;
+    border: none;
+}
+.btn-disabled:hover{
+    border: none;
+    background: #adadad;
+    color: white;
+}
+.sub-btn{
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+#paper-title{
+    margin: 10px 0;
+}
+
+#paper-pop{
+    display: none;
+    z-index: 30;
+    position: fixed;
+    top: 30px;
+    width: 77%;
+    min-width: 1170px;
+    height: 90%;
+    background-color:rgba(5,5,5,0.8) ;
+}
+.paper-box{
+}
+#paper-detail{
+    overflow: scroll;
+    max-height: 510px;
+}
+#publish-time{
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+}
+.begin-time,.end-time,.save-time{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+.save-time{
+    width: 100%;
+}
+.save-time button{
+    padding: 0px 30px;
+}
+.publish-btn{
+    /*margin-left: 160px;*/
+    float: right;
+}
+.paper-main{
+    width: 100%;
+    padding: 20px 10px;
+}
+.padding-space{
+    padding: 10px 20px;
+}
+textarea{
+    width: 80%;
+    height: 120px;
+    background-color: rgba(255,255,255,0.8);
+}
